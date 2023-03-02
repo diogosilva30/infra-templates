@@ -12,7 +12,7 @@ To use these templates, you'll need to install [Packer](https://developer.hashic
 ## Building a VM template
 To build a virtual machine using one of these templates, follow these steps:
 
-1. Edit the credentials.pkr.hcl file with your proxmox URL and API credentials.
+1. Edit the `credentials.pkr.hcl` file with your proxmox URL and API credentials.
 You can create an API token in the Proxmox web interface by going to "Datacenter" > "Permissions" > "API Tokens" and clicking "Add".
 
 2. Open the Packer template file and `http/user-data` file and carefully review the variables and customize them to your needs (`ssh_username`, `ssh_private_key_file`, `ssh_authorized_keys` , etc...)
