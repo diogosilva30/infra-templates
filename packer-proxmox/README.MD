@@ -20,13 +20,13 @@ You can create an API token in the Proxmox web interface by going to "Datacenter
 3. Validate the Packer template using:
 
 ```sh
-packer validate -var-file="creedentials.pkr.hcl" ./ubuntu-server-jammy-docker/ubuntu-server-jammy-docker.pk.hcl # Replace this folder and file with your desired VM template
+packer validate -var-file="credentials.pkr.hcl" ./ubuntu-server-jammy-docker/ubuntu-server-jammy-docker.pk.hcl # Replace this folder and file with your desired VM template
 ```
 
 1. Build the virtual machine image template using:
 
 ```sh
-packer build -var-file="creedentials.pkr.hcl" ./ubuntu-server-jammy-docker/ubuntu-server-jammy-docker.pk.hcl# Replace this folder and file with your desired VM template
+packer build -var-file="credentials.pkr.hcl" ./ubuntu-server-jammy-docker/ubuntu-server-jammy-docker.pk.hcl# Replace this folder and file with your desired VM template
 ```
 
 This will create a new virtual machine on Proxmox based on the pre-configured image.
